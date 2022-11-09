@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="wwtbam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Who Wants To Be a Millionaire</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex mt-5 round">
+               <div class="col-2 ml-2" id="clock"><i class="fa fa-clock-o mr-3"></i><span id="timer">0:00</span></div>
+               <div class="col-1" onclick="walkAway()"> <i class="fa fa-blind"></i></div>
+               <div class="col-1 right" onclick="deleteTwo()" id="justOnce"> <span>50:50</span></div>
+               <div class="col-1" onclick="phoneFriend()" id="phone"> <i class="fa fa-phone"></i></div>
+               <div class="col-1" onclick="hint()" id="disable"> <i class="fa fa-users"></i></div>
+            </div>
+            <div class="row row2">
+                <div id="hint"></div>
+                <div id="alert"></div>
+                <div id="final"></div>
+                <div id="convoFriend"></div>
+                <div id="moneyEarned" class="blink"></div>
+                <div class="col-12 mb-4 questions" id="questions" >Questions</div>
+                <div class="col-12" id="answers"></div>
+            </div>
+        </div>
+    </div>
+    <audio  hidden controls autostart>
+        <source src="./audio/wwtbamaudio.mp3" type="audio/mp3">
+      </audio>
+    <script src="./wwtbam.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    background-image:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)),url('./images/wwtbam2.jpg');
+    width: 80%;
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    color: white;
+
+    .round{
+        text-align: center;
+        div{
+            width: 10px;
+            border-radius: 100%;
+            border: 2px solid white;
+            background-color: rgb(23, 23, 196); 
+        }
+        .right{
+            margin-left: 70%;
+        }
+    }
+    .row2{
+        font-size: 25px;
+        margin-left: 20%;
+        margin-top: 20%;
+        padding-top: 5%;
+
+        .questions{
+            text-align: center;
+            border-radius: 60px;
+            border: 2px solid white;
+            background-color: rgb(23, 23, 196);  
+        }
+
+        .answers{
+            text-align: center;
+            border-radius: 60px;
+            border: 2px solid white;
+            background-color: rgb(23, 23, 196);  
+            color: white;
+        }
+        .blink{
+            animation: blink 1s steps(1, end) infinite;
+        }
+        @keyframes blink {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+    }
+}
